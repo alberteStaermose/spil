@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spil</title>
+    <link rel="stylesheet" href="spil.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Hjem</a></li>
+          <li><a href="assets.html">Assetliste</a></li>
+          <li><a href="doku.html">Dokumentation</a></li>
+          <li><a href="spil.html">Spil</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="screen">
+      <div id="game">
+        <div id="game_background"></div>
+        <div id="game_foreground"></div>
+        <div id="game_elements">
+          <div id="handsker_container">
+            <div id="handsker_sprite"></div>
+          </div>
+          <div id="dynamit_container">
+            <div id="dynamit_sprite"></div>
+          </div>
+          <div id="yvonnehat_container">
+            <div id="yvonnehat_sprite"></div>
+          </div>
+          <div id="ost_container">
+            <div id="ost_sprite"></div>
+          </div>
+        </div>
+
+        <div id="game_ui">
+          <div id="score_board">
+            <p>
+              <span id="mine_point">0</span>
+            </p>
+          </div>
+
+          <div id="energy_board">
+            <div id="liv1"></div>
+            <div id="liv2"></div>
+            <div id="liv3"></div>
+          </div>
+          <div id="time_board">
+            <div id="time_container">
+              <div id="time_sprite"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="start">
+        <div id="start_knap"></div>
+      </div>
+      <div id="game_over">
+        <div id="game_over_points"></div>
+        <div id="genstart1"></div>
+      </div>
+      <div id="level_complete">
+        <div id="level_complete_points"></div>
+        <div id="genstart2"></div>
+      </div>
+      <div id="sound">
+        <audio src="lyde/lyd1.mp3" id="lyd1"></audio>
+        <audio src="lyde/lyd2.mp3" id="lyd2"></audio>
+        <audio src="lyde/baggrundsmusik.mp3" id="musik"></audio>
+        <audio src="lyde/wosh.mp3" id="wosh"></audio>
+      </div>
+    </div>
+    <script src="spil.js"></script>
+  </body>
+</html>

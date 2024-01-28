@@ -1,0 +1,252 @@
+body {
+  background-color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* img {
+  width: 100%;
+  height: auto;
+  display: block;
+} */
+
+#section_first img {
+  width: 30%;
+  height: auto;
+}
+
+#section_second img {
+  width: 30%;
+  height: auto;
+}
+
+#section_third img {
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h4 {
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h1 {
+  color: #ff0000;
+}
+
+h2,
+h3,
+h4 {
+  color: #500000;
+}
+
+p {
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #000000;
+}
+
+img {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*mobil version*/
+header nav ul {
+  display: flex;
+  gap: 1.25rem;
+  list-style-type: none;
+  padding: 0px;
+  overflow-x: auto;
+  margin: 2px;
+  place-content: center;
+  flex-flow: wrap;
+  /* justify-content: space-around; */
+}
+
+header nav ul a {
+  /*font-family: "";*/
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #000000;
+}
+nav a:hover {
+  color: #ff0000;
+}
+/*
+#first_section {
+  grid-column: 1/4;
+  width: 100%;
+  height: 100vh;
+  background-image: url(alberte_staermose_splashbillede.jpg);
+  background-size: cover;
+  background-position: 25% 10%;
+  
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}*/
+
+h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 3rem;
+  line-height: 1.125;
+  margin: 0;
+  margin-top: 20px;
+
+  display: grid;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+h2 {
+  font-family: "Sansita", sans-serif;
+  line-height: 1.125;
+  font-size: 2.5rem;
+  margin-top: 1.25rem;
+}
+
+h3 {
+  font-family: "Sansita", sans-serif;
+  line-height: 1.125;
+  font-size: 1.56rem;
+}
+
+h4 {
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.125;
+  font-size: 1.56rem;
+  margin-bottom: 2px;
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  margin-top: 2px;
+}
+
+header {
+  display: flex;
+  position: sticky;
+  place-content: center;
+  top: 0;
+  background-color: #fffff1;
+  z-index: 10;
+}
+
+/*Tablet version*/
+@media (min-width: 600px) {
+  header nav ul a {
+    font-weight: 700;
+  }
+
+  header {
+    display: flex;
+    position: sticky;
+    place-content: center;
+    top: 0;
+    background-color: #fffff1;
+    z-index: 10;
+  }
+
+  #first_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr 4fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  h1 {
+    font-size: 5.6rem;
+    margin: 0;
+
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1 / 4;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+    margin-top: 100px;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+/*Web version*/
+@media (min-width: 992px) {
+  header nav ul {
+    gap: 20px;
+    padding: 0;
+    margin: 5px;
+  }
+
+  header nav ul a {
+    font-weight: 700;
+  }
+
+  header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    background-color: #fffff1;
+    place-content: center;
+  }
+
+  h1 {
+    font-size: 8.75rem;
+    font-weight: bolder;
+    margin: 0;
+
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1 / 3;
+  }
+
+  h2 {
+    font-size: 4.4rem;
+    margin-top: 100px;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+}
